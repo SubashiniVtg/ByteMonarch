@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkCoach Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cliq.zoho.com/api/v2/sdk.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="app-container">
+        <nav class="nav-bar">
+            <button onclick="showView('home')">Home Feed</button>
+            <button onclick="showView('project')">Project Page</button>
+            <button onclick="showView('analytics')">Analytics</button>
+            <button onclick="showView('profile')">My Profile</button>
+        </nav>
+
+        <main id="main-content">
+            <div id="home-view" class="view active">
+                <h2>Home Feed</h2>
+                <div class="stories-bar">Stories Bar (Image/Text/Video Updates)</div>
+                <div class="compose-box">Compose Post/Task Here...</div>
+                <div class="mixed-feed">Mixed Feed (Posts + Task Updates)</div>
+            </div>
+
+            <div id="project-view" class="view hidden">
+                <h2>Project: Cliqtrix Contest</h2>
+                <div class="kanban-board">
+                    <div class="kanban-column"><h3>To Do</h3></div>
+                    <div class="kanban-column"><h3>Doing</h3></div>
+                    <div class="kanban-column"><h3>Done</h3></div>
+                </div>
+            </div>
+
+            <div id="analytics-view" class="view hidden">
+                <h2>Analytics Dashboard</h2>
+                <p>Team Engagement Heatmap, Avg Productivity Score charts go here...</p>
+                </div>
+
+            <div id="profile-view" class="view hidden">
+                <h2>My Profile</h2>
+                <p>Weekly Productivity Score, Streaks, Badges...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

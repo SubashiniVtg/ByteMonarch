@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.app-container {
+    padding: 15px;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-bar button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* View Control */
+.view {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: white;
+    min-height: 400px;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Kanban Styling */
+.kanban-board {
+    display: flex;
+    gap: 20px;
+}
+
+.kanban-column {
+    flex: 1;
+    min-height: 300px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+}
